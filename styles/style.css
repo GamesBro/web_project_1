@@ -13,6 +13,7 @@
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
+    background-color: #f2f2f2;
     /* parameters for the header section */
 }
 
@@ -28,4 +29,13 @@
     color: white;
     margin-right: 0;
     margin-top: 80px;
+}
+.logo {
+    height: 31px;
+    width: 154px;
+    padding-top: 1px ; /*убирает косяки с верхней границе, но я не заметил, так что в последствии можно убрать. */
+}
+.header__logo {
+    margin-left: 64px;
+    margin-top: 30px;
 }
