@@ -14,14 +14,17 @@
     min-height: 600px;
     max-height: 756px;
     background-color: #f2f2f2;
+    position: relative;
+    padding-top: 1px ; /*убирает косяки с верхней границе, но я не заметил, так что в последствии можно убрать. */
     display: flex;
     flex-direction: column;
     
     
-    
     /* parameters for the header section */
 }
-
+.content {
+    margin-top:100px;
+}
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
     height: 568px;
@@ -38,7 +41,7 @@
 .logo {
     height: 31px;
     width: 154px;
-    padding-top: 1px ; /*убирает косяки с верхней границе, но я не заметил, так что в последствии можно убрать. */
+    
 }
 .header__logo {
     margin-left: 64px;
@@ -50,6 +53,36 @@
     line-height: 96px;
     font-size: 102px;
 }
-.header-align {
-    flex-basis: 200px;
+.subtitle {
+    position: absolute;
+    line-height: 25px;
+    font-size: 18px;
+    bottom: 30px;
+    left: 64px;
+    width: 388px;
+}
+.main-illustration {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    width: 765px;
+    height: 608px;
+    z-index: 1;
+}
+.square-pic {
+    width: 568px;
+    height: 568px;
+    background-color: #2F80ED;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    z-index: 0;
+
+}
+.link {
+    text-decoration: none;
+}
+.header-left {
+    
+    
 }
