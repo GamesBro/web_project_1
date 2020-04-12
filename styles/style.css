@@ -8,25 +8,19 @@
     /* this ensures that all content is centered on screens wider than 1600px */
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
+/* All elements inside Header */
 .header {
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
     background-color: #f2f2f2;
-    
-    padding-top: 1px ; /*убирает косяки с верхней границе, но я не заметил, так что в последствии можно убрать. */
+    padding-top: 1px ; 
     display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
     
-    
     /* parameters for the header section */
-}
-.content {
-    margin-top:100px;
-    
 }
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
@@ -34,32 +28,26 @@
     width: 568px;
 }
 
-/* including elements with key-value modifiers */
-.table__cell_theme_dark {
-    width: 200px;
-    color: white;
-    margin-right: 0;
-    margin-top: 80px;
-}
 .logo {
     
     height: 31px;
     width: 154px;
     
 }
+/* Modifier "place" for logo with the value "header" */
 .logo_place_header {
     position: absolute;
     top: 30px;
     left: 64px;
 }
-.header_title {
+.header__title {
     width: 730px;
     margin-left: 64px;
     line-height: 96px;
     font-size: 102px;
     justify-self: center;
 }
-.subtitle {
+.header__subtitle {
     position: absolute;
     line-height: 25px;
     font-size: 18px;
@@ -67,7 +55,7 @@
     left: 64px;
     width: 388px;
 }
-.main-illustration {
+.header__main-illustration {
     position: absolute;
     bottom: 1px;
     right: 1px;
@@ -75,7 +63,7 @@
     height: 608px;
     z-index: 1;
 }
-.square-pic {
+.header__square-pic {
     width: 568px;
     height: 568px;
     background-color: #2F80ED;
@@ -85,9 +73,15 @@
     z-index: 0;
 
 }
-.link {
+.header__link {
     text-decoration: none;
 }
+/* ----------------------------------------- */
+/* All elements inside Content */
+.content {
+    margin-top:100px;
+}
+/* Description */
 .description {
     display: flex;
     justify-content: center;
@@ -104,28 +98,27 @@
     min-width: 784px;
 }
 
-.brief {
+.description__brief {
     width: 175px;
     line-height: 1,2px;
     font-size: 18px;
     font-weight: normal;
-    color: #2F80ED;
-    
-    
-    
+    color: #2F80ED;  
 }
-.paragraph {
+.description__paragraph {
     line-height: 34px;
     font-size: 24px;
     font-weight: normal;
     margin-top: 30px;
     
 }
-.span-accent {
+.description__span-accent {
     line-height: 34px;
     font-size: 24px;
     font-weight: bold;
 }
+/* ---------------------- */
+/* Digits */
 .digits {
     margin: 100px auto;
     display: flex;
@@ -151,6 +144,8 @@
 
    
 }
+/* --------------------- */
+/* Table block */
 .table {
     width: 1100px;
     display: flex;
@@ -162,20 +157,22 @@
     margin-top: 60px;
     list-style-type: none;
 }
-.cell__heading {
+.table__heading {
     line-height: 1,15px;
     font-size: 24px;
     font-weight: bold;
 }
-.cell__text {
+.table__text {
     margin-top: 20px;
     line-height: 1,2px;
     font-size: 18px;
     font-weight: normal;
 }
-.text__signature {
+.table__signature {
     margin-top: 20px;
 }
+/* ----------------------- */
+/* Feynman */
 .feynman {
     background-color: #f2f2f2;
     position: relative;
@@ -223,6 +220,8 @@
     text-decoration: none;
 
 }
+/* --------------------- */
+/* Kaufman */
 .kaufman {
     background-color: #1F1F1F ;
     margin: 0 auto;
@@ -233,38 +232,7 @@
     overflow: hidden;
     
 }
-.table_theme_dark {
-    width: 1300px;
-    display: flex;
-    margin-bottom: 90px;
-    z-index: 2;
-    
-}
-.table__cell-theme_dark {
-    width: 200px;
-    margin-top: 80px;
-    
-    
-}
-.triangle {
-    position: absolute;
-    width: 877px;
-    height: 877px;
-    top: 0;
-    right: -210px;
-    z-index: 0;
-
-}
-.cell__heading_theme_dark {
-    line-height: 1,15px;
-    font-size: 24px;
-    font-weight: bold;
-}
-.cell__text_theme_dark {
-    line-height: 1,2px;
-    font-size: 18px;
-    font-weight: normal;
-}
+/* Modifier "theme" for text with the value "dark" */
 .section-title_theme_dark {
     line-height: 69px;
     font-size: 60px;
@@ -279,6 +247,44 @@
     font-weight: normal;
     color: white;
 }
+/* Modifier "theme" for a table with the value "dark" */
+.table_theme_dark {
+    width: 1100px;
+    display: flex;
+    margin-bottom: 90px;
+    z-index: 2;
+    
+}
+.table__cell_theme_dark {
+    width: 200px;
+    color: white;
+    margin-right: 0;
+    margin-top: 80px;
+    
+    
+}
+.table__heading_theme_dark {
+    line-height: 1,15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.table__text_theme_dark {
+    line-height: 1,2px;
+    font-size: 18px;
+    font-weight: normal;
+}
+/* ------------------------- */
+.kaufman__triangle {
+    position: absolute;
+    width: 877px;
+    height: 877px;
+    top: 0;
+    right: -210px;
+    z-index: 0;
+
+}
+/* ---------------------- */
+/* Footer */
 .footer {
     background-color: #1F1F1F;
     padding-top: 1px;
@@ -301,6 +307,7 @@
     position: relative;
     
 }
+/* Modifier "place" for logo with the value "footer" */
 .logo_place_footer {
     position: absolute;
     width: 183px;
