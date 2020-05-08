@@ -8,38 +8,45 @@
     /* this ensures that all content is centered on screens wider than 1600px */
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+
+
 /* All elements inside Header */
+
 .header {
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
     background-color: #f2f2f2;
-    padding-top: 1px ; 
+    padding-top: 1px;
     display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
-    
     /* parameters for the header section */
 }
+
+
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
+
 .header__square-pic {
     height: 568px;
     width: 568px;
 }
 
 .logo {
-    
     height: 31px;
     width: 154px;
-    
 }
+
+
 /* Modifier "place" for logo with the value "header" */
+
 .logo_place_header {
     position: absolute;
     top: 30px;
     left: 64px;
 }
+
 .header__title {
     width: 730px;
     margin-left: 64px;
@@ -47,14 +54,20 @@
     font-size: 102px;
     justify-self: center;
 }
+
 .header__subtitle {
+    margin-block-start: 0;
+    margin-inline-end: 0;
+    margin: 0;
+    width: 388px;
     position: absolute;
+    left: 64px;
+    bottom: 30px;
     line-height: 25px;
     font-size: 18px;
-    bottom: 30px;
-    left: 64px;
-    width: 388px;
+    font-weight: normal;
 }
+
 .header__main-illustration {
     position: absolute;
     bottom: 1px;
@@ -63,6 +76,7 @@
     height: 608px;
     z-index: 1;
 }
+
 .header__square-pic {
     width: 568px;
     height: 568px;
@@ -71,61 +85,76 @@
     top: 64px;
     right: 0;
     z-index: 0;
-
 }
+
 .header__link {
     text-decoration: none;
+    color: #2F80ED;
 }
+
+
 /* ----------------------------------------- */
+
+
 /* All elements inside Content */
+
 .content {
-    margin-top:100px;
+    margin-top: 100px;
 }
+
+
 /* Description */
+
 .description {
     display: flex;
     justify-content: center;
-    
 }
-.description__two-columns {
+
+.two-columns {
     display: flex;
     justify-content: space-between;
     width: 80%;
-
 }
-.description__main-text {
+
+.two-columns__main-text {
     width: 80%;
     min-width: 784px;
 }
 
-.description__brief {
+.two-columns__brief {
     width: 175px;
-    line-height: 1,2px;
+    line-height: 1.2;
     font-size: 18px;
     font-weight: normal;
-    color: #2F80ED;  
+    color: #2F80ED;
 }
-.description__paragraph {
+
+.two-columns__paragraph {
     line-height: 34px;
     font-size: 24px;
     font-weight: normal;
     margin-top: 30px;
-    
 }
-.description__span-accent {
+
+.two-columns__span-accent {
     line-height: 34px;
     font-size: 24px;
     font-weight: bold;
 }
+
+
 /* ---------------------- */
+
+
 /* Digits */
+
 .digits {
     margin: 100px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
+
 .section-title {
     width: 60%;
     margin-bottom: 20px;
@@ -133,55 +162,65 @@
     font-size: 60px;
     font-weight: bold;
     text-align: center;
-    
 }
+
 .section-subtitle {
     width: 60%;
     text-align: center;
     line-height: 34px;
     font-size: 24px;
     font-weight: normal;
-
-   
 }
+
+
 /* --------------------- */
+
+
 /* Table block */
+
 .table {
     width: 1100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .table__cell {
     width: 250px;
     margin-top: 60px;
     list-style-type: none;
 }
+
 .table__heading {
-    line-height: 1,15px;
+    line-height: 1.15;
     font-size: 24px;
     font-weight: bold;
 }
+
 .table__text {
+    margin-block-start: 0;
+    margin-inline-end: 0;
     margin-top: 20px;
-    line-height: 1,2px;
+    line-height: 1.2;
     font-size: 18px;
     font-weight: normal;
+    margin-bottom: 0px;
 }
-.table__signature {
-    margin-top: 20px;
-}
+
+
 /* ----------------------- */
+
+
 /* Feynman */
+
 .feynman {
-    background-color: #f2f2f2;
-    position: relative;
     height: 790px;
+    background-color: #F2F2F2;
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    flex-direction: column;
 }
+
 .feynman__img {
     position: absolute;
     bottom: 0;
@@ -190,26 +229,28 @@
     height: 637px;
     z-index: 0;
 }
+
 .feynman__title {
-    position: absolute;
-    z-index: 1;
     width: 775px;
-    line-height: 1,15px;
+    line-height: 1.15;
     font-size: 120px;
     font-weight: bold;
+    margin: 100px auto 0;
+    z-index: 1;
     text-align: center;
-    top: 70px;
 }
+
 .feynman__subtitle {
-    margin-top: 70px;
-    position: absolute;
-    z-index: 4;
-    text-align: left;
+    margin-block-start: 0;
+    margin-inline-end: 0;
     line-height: 51px;
     font-size: 36px;
     font-weight: normal;
-    
+    margin-top: 70px;
+    z-index: 1;
+    text-align: center;
 }
+
 .feynman__link {
     position: absolute;
     right: 48px;
@@ -218,21 +259,38 @@
     font-size: 36px;
     font-weight: normal;
     text-decoration: none;
-
+    color: #000;
 }
+
+
 /* --------------------- */
+
+
 /* Kaufman */
+
 .kaufman {
-    background-color: #1F1F1F ;
+    background-color: #1F1F1F;
     margin: 0 auto;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    
 }
+
+.kaufman__triangle {
+    width: 877px;
+    height: 877px;
+    position: absolute;
+    background-size: contain;
+    background-image: url('../images/triangle.svg');
+    top: 0;
+    right: -210px;
+}
+
+
 /* Modifier "theme" for text with the value "dark" */
+
 .section-title_theme_dark {
     line-height: 69px;
     font-size: 60px;
@@ -240,6 +298,7 @@
     color: white;
     margin-top: 90px;
 }
+
 .section-subtitle_theme_dark {
     line-height: 34px;
     font-size: 24px;
@@ -247,52 +306,53 @@
     font-weight: normal;
     color: white;
 }
+
+
 /* Modifier "theme" for a table with the value "dark" */
+
 .table_theme_dark {
     width: 1100px;
     display: flex;
     margin-bottom: 90px;
     z-index: 2;
-    
 }
+
 .table__cell_theme_dark {
     width: 200px;
     color: white;
     margin-right: 0;
     margin-top: 80px;
-    
-    
 }
+
 .table__heading_theme_dark {
-    line-height: 1,15px;
+    line-height: 1.15;
     font-size: 24px;
     font-weight: bold;
 }
+
 .table__text_theme_dark {
-    line-height: 1,2px;
+    line-height: 1.2;
     font-size: 18px;
     font-weight: normal;
 }
-/* ------------------------- */
-.kaufman__triangle {
-    position: absolute;
-    width: 877px;
-    height: 877px;
-    top: 0;
-    right: -210px;
-    z-index: 0;
 
-}
+
+/* ------------------------- */
+
+
 /* ---------------------- */
+
+
 /* Footer */
+
 .footer {
     background-color: #1F1F1F;
     padding-top: 1px;
     min-height: 350px;
     display: flex;
     justify-content: space-around;
-    
 }
+
 .footer__columns {
     position: relative;
     justify-content: space-between;
@@ -302,34 +362,37 @@
     margin-bottom: 40px;
 }
 
+.footer__column {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer__column_content_copyright {
     flex-basis: 711px;
-    position: relative;
-    
 }
+
+
 /* Modifier "place" for logo with the value "footer" */
+
 .logo_place_footer {
     position: absolute;
     width: 183px;
     height: 35px;
     top: 0;
     left: 0;
-
 }
+
 .footer__author {
     position: absolute;
     bottom: 0;
     left: 0;
     color: white;
     line-height: 25px;
-    font-size:  18px;
+    font-size: 18px;
     font-weight: normal;
     margin: 18px 0;
 }
-.footer__column_content_info {
-    display: flex;
-    flex-direction: column;
-}
+
 .footer__column-heading {
     line-height: 45px;
     font-size: 18px;
@@ -339,23 +402,24 @@
     left: 0;
     margin-bottom: 20px;
 }
+
 .footer__column-links {
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    padding-left: 0;
+}
+
+.footer__column-link {
     color: white;
     line-height: 30px;
     font-size: 18px;
     font-weight: normal;
     text-decoration: none;
 }
+
 .footer__social-icon {
     margin-right: 10px;
     width: 16px;
     height: 16px;
 }
-.footer__column-links_position_bottom {
-    margin-bottom: 16px;
-}
-.footer__column_content_social {
-    display: flex;
-    flex-direction: column;
-}
-
